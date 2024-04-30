@@ -13,4 +13,4 @@ while True:
         print(f"Your guess is too small, try again")
     else:
         print(f"Your guess is too big, try again")
-print(f"You found the correct number after {turns} rounds")
+print(f"Congradulations! you found the correct number after {turns} rounds")
