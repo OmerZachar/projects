@@ -9,6 +9,7 @@ while True:
     if user == 'x':
         print('Game over')
         break
+<<<<<<< HEAD
     elif user == 'n':
         print('Game over, Do u want to restart?')
         break
@@ -24,3 +25,10 @@ while True:
         else:
             print(f"Your guess is too big, try again")
             print(f"You found the correct number after {turns} rounds")
+=======
+    elif user < computer:
+        print(f"Your guess is too small, try again")
+    else:
+        print(f"Your guess is too big, try again")
+print(f"Congradulations! you found the correct number after {turns} rounds")
+>>>>>>> refs/remotes/origin/main
