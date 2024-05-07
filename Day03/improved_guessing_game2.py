@@ -1,6 +1,6 @@
 def play_game():
     import random
-    rand_num = random.randint(1,20)
+    rand_num = random.randint(1,5)
     counter = 0
 
     while True:
@@ -31,6 +31,7 @@ def play_game():
 
 
 def main():
+    i=True
     while True:
         result = play_game()
         if result == 'exit':
@@ -44,17 +45,15 @@ def main():
             else:
                 print("Good luck!")
                 break
-            main()
         elif result == "success":
-            while True:
-                ask_user = input("would you like to play again (yes/no)?")
-                if ask_user.lower() == 'yes':
-                    main()
-                elif ask_user.lower() == 'no':
-                    print("Good luck!")
-                    break
-                else:
-                    print("Please select yes/no")
-                    continue
+            ask_user = input("would you like to play again (yes/no)?")
+            if ask_user.lower() == 'no':
+                print("Good luck!")
+                break
+            elif ask_user.lower() == 'yes':
+                main()
+            else:
+                print("Please select yes/no")
+                continue
 
 main()
