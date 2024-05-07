@@ -1,6 +1,6 @@
 def play_game():
     import random
-    rand_num = random.randint(1,5)
+    rand_num = random.randint(1,20)
     counter = 0
 
     while True:
